@@ -18,14 +18,42 @@ body {
   background-color: var(--background-page);
 }
 
+/* reset start */
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 .link {
   text-decoration: none;
 }
 
 /* header  */
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.header-container {
+  display: flex;
+ align-items: center;
+ 
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -37,13 +65,29 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-clr-web);
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-studio-color {
   color: var(--logo-clr-dark);
 }
 
+.header-nav {
+margin-right: auto;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .header-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -57,6 +101,9 @@ body {
 }
 
 .header-adaress {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -69,9 +116,19 @@ body {
   color: var(--address-hover);
 }
 
+.header-list-address {
+  display: flex;
+  gap: 40px;
+}
+
 /* hero */
 .hero-section {
   background-color: #2e2f42;
+}
+
+.hero-container {
+  height: 600px;
+  padding-top: 188px;
 }
 
 .hero-heading {
@@ -82,6 +139,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -92,18 +150,22 @@ body {
   display: flex;
   letter-spacing: 0.04em;
   color: #ffffff;
-}
-
-.cursor-focus {
-  cursor: pointer;
-}
-
-.hero-button {
   background: #4d5ae5;
+  min-width: 169px;
+  min-height: 56px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .hero-button:hover,
 .hero-button:focus {
   background: #404bbf;
+  cursor: pointer;
+}
+
+.hero-btn-text {
+padding: 16px 32px;
 }
 
 /* studio */
