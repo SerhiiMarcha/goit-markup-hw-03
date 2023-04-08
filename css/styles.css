@@ -19,7 +19,13 @@ body {
 }
 
 /* reset start */
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -50,8 +56,7 @@ img {
 
 .header-container {
   display: flex;
- align-items: center;
- 
+  align-items: center;
 }
 
 .header-logo {
@@ -75,7 +80,7 @@ img {
 }
 
 .header-nav {
-margin-right: auto;
+  margin-right: auto;
 }
 
 .header-nav-list {
@@ -143,6 +148,7 @@ margin-right: auto;
 }
 
 .hero-button {
+  padding: 16px 32px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -164,14 +170,23 @@ margin-right: auto;
   cursor: pointer;
 }
 
-.hero-btn-text {
-padding: 16px 32px;
-}
-
 /* studio */
 
 .studio-heading-none {
   display: none;
+}
+
+.studio-container {
+  min-height: 388px;
+  padding-top: 120px;
+  padding-right: 15px;
+  padding-bottom: 120px;
+  padding-left: 15px;
+}
+
+.studio-container-ul {
+  display: flex;
+  gap: 24px;
 }
 
 .studio-heading {
@@ -180,6 +195,7 @@ padding: 16px 32px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--heading-color);
+  margin-bottom: 8px;
 }
 
 .studio-indent {
@@ -198,11 +214,25 @@ padding: 16px 32px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--heading-color);
+  padding-bottom: 72px;
+}
+
+.doing-container {
+  display: flex;
+  gap: 24px;
+}
+
+.doing-container-content {
+  min-height: 532px;
 }
 
 /* our team section */
 .team-section {
   background-color: #f4f4fd;
+}
+
+.team-container-content {
+  min-height: 732px;
 }
 
 .team-heading {
@@ -213,24 +243,36 @@ padding: 16px 32px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--heading-color);
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+
+.team-container {
+  min-height: 380px;
+  display: flex;
+  gap: 24px;
+}
+
+.team-style-list {
+  min-height: 120px;
   background-color: #ffffff;
 }
 
-.team-style-list{
-  background-color: #FFFFFF;
-}
-
 .team-name-heading {
+  padding-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  text-align: center;
   letter-spacing: 0.02em;
   color: var(--heading-color);
 }
 
 .team-position {
+  padding-top: 8px;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
@@ -253,11 +295,19 @@ padding: 16px 32px;
   color: var(--logo-clr-web);
 }
 
+.footer-container {
+  min-height: 312px;
+  padding-top: 102px;
+  padding-left: 15px;
+}
+
 .studio-footer-color {
   color: var(--logo-clr-light);
 }
 
 .footer-indent {
+  padding-top: 18px;
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
