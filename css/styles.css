@@ -189,6 +189,10 @@ img {
   gap: 24px;
 }
 
+.studio-li {
+  flex-basis: calc((100% - 72px) / 3);
+}
+
 .studio-heading {
   font-weight: 500;
   font-size: 20px;
@@ -244,7 +248,7 @@ img {
   text-transform: capitalize;
   color: var(--heading-color);
   padding-top: 120px;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 .team-container {
@@ -322,6 +326,13 @@ img {
 }
 
 /* main */
+.pf-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
 .pf-btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -332,6 +343,11 @@ img {
   letter-spacing: 0.04em;
   color: #4d5ae5;
   background-color: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  min-width: 21px;
+  min-height: 24px;
+  padding: 12px 24px;
 }
 
 .cursor-focus-pf {
@@ -343,8 +359,21 @@ img {
   background: #404bbf;
   color: #ffffff;
 }
+/* portfolio */
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.pf-list {
+  margin-bottom: 48px;
+}
 
 .project-heading {
+  padding-top: 32px;
+  padding-left: 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -353,6 +382,8 @@ img {
 }
 
 .project-direction {
+  padding-top: 8px;
+  padding-left: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
