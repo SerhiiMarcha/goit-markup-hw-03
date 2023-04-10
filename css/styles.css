@@ -128,13 +128,11 @@ img {
 
 /* hero */
 .hero-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: #2e2f42;
 }
 
-.hero-container {
-  height: 600px;
-  padding-top: 188px;
-}
 
 .hero-heading {
   font-family: "Roboto", sans-serif;
@@ -148,7 +146,6 @@ img {
 }
 
 .hero-button {
-  padding: 16px 32px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -159,6 +156,7 @@ img {
   background: #4d5ae5;
   min-width: 169px;
   min-height: 56px;
+  padding: 16px 32px;
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
@@ -172,8 +170,21 @@ img {
 
 /* studio */
 
+.section {
+  padding: 120px 0;
+}
+
 .studio-heading-none {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .studio-container {
@@ -188,9 +199,8 @@ img {
   display: flex;
   gap: 24px;
 }
-
-.studio-li {
-  flex-basis: calc((100% - 72px) / 3);
+.studio-list-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .studio-heading {
@@ -218,7 +228,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--heading-color);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .doing-container {
@@ -227,17 +237,17 @@ img {
 }
 
 .doing-container-content {
-  min-height: 532px;
+  padding-bottom: 120px;
 }
 
 /* our team section */
 .team-section {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.team-container-content {
-  min-height: 732px;
-}
+
 
 .team-heading {
   font-weight: 700;
@@ -247,18 +257,16 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--heading-color);
-  padding-top: 120px;
-  padding-bottom: 72px;
+margin-bottom: 72px;
 }
 
 .team-container {
-  min-height: 380px;
   display: flex;
   gap: 24px;
 }
 
 .team-style-list {
-  min-height: 120px;
+padding-bottom: 32px;
   background-color: #ffffff;
 }
 
@@ -283,6 +291,8 @@ img {
 
 /* footer sectio */
 .footer-section {
+  padding-top: 102px;
+  padding-bottom: 100px;
   background-color: #2e2f42;
 }
 
@@ -299,11 +309,6 @@ img {
   color: var(--logo-clr-web);
 }
 
-.footer-container {
-  min-height: 312px;
-  padding-top: 102px;
-  padding-left: 15px;
-}
 
 .studio-footer-color {
   color: var(--logo-clr-light);
@@ -322,10 +327,23 @@ img {
 /* portfolio */
 /* --------- */
 .portfolio-heading {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* main */
+.pf-bottom {
+  padding-bottom: 120px;
+}
+
 .pf-btn-container {
   display: flex;
   justify-content: center;
