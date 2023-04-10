@@ -340,6 +340,13 @@ img {
 /* --------- */
 /* portfolio */
 /* --------- */
+
+/* main */
+.pf-main {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .portfolio-heading {
   position: absolute;
   width: 1px;
@@ -353,18 +360,13 @@ img {
   overflow: hidden;
 }
 
-/* main */
-.pf-bottom {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
-
 .pf-btn-container {
   display: flex;
   justify-content: center;
   gap: 24px;
-   margin-bottom: 72px;
+  margin-bottom: 72px;
 }
+
 .pf-btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -378,8 +380,6 @@ img {
   border: 1px solid #e7e9fc;
   padding: 12px 24px;
   border-radius: 4px;
-  min-width: 21px;
-  min-height: 24px;
 }
 
 .cursor-focus-pf {
