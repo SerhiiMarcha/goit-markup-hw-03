@@ -55,6 +55,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-logo {
@@ -78,6 +79,8 @@ img {
 }
 
 .header-nav {
+  display: flex;
+  align-items: center;
   margin-right: auto;
 }
 
@@ -139,7 +142,10 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
+  margin-right: auto;
   margin-bottom: 48px;
+  margin-left: auto;
 }
 
 .hero-button {
@@ -147,22 +153,23 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
+  display: block;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #4d5ae5;
-  min-width: 169px;
-  min-height: 56px;
+  height: 56px;
   padding: 16px 32px;
+  border: none;
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background: #404bbf;
-  cursor: pointer;
+  cursor: pointe;
 }
 
 /* studio */
@@ -261,18 +268,23 @@ img {
 }
 
 .team-style-list {
-  padding-bottom: 32px;
+
   background-color: #ffffff;
 }
 
+.team-name-position {
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-name-heading {
-  padding-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--heading-color);
+  margin-bottom: 8px;
 }
 
 .team-position {
@@ -286,7 +298,7 @@ img {
 
 /* footer sectio */
 .footer-section {
-  padding-top: 102px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background-color: #2e2f42;
 }
@@ -297,11 +309,12 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
+  display: inline-block;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-clr-web);
+  margin-bottom: 16px;
 }
 
 .studio-footer-color {
@@ -309,7 +322,6 @@ img {
 }
 
 .footer-indent {
-  padding-top: 18px;
   width: 264px;
   font-size: 16px;
   line-height: 1.5;
