@@ -131,7 +131,6 @@ img {
   background-color: #2e2f42;
 }
 
-
 .hero-heading {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -245,8 +244,6 @@ img {
   padding-bottom: 120px;
 }
 
-
-
 .team-heading {
   font-weight: 700;
   font-size: 36px;
@@ -255,7 +252,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--heading-color);
-margin-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-container {
@@ -264,7 +261,7 @@ margin-bottom: 72px;
 }
 
 .team-style-list {
-padding-bottom: 32px;
+  padding-bottom: 32px;
   background-color: #ffffff;
 }
 
@@ -306,7 +303,6 @@ padding-bottom: 32px;
   text-transform: uppercase;
   color: var(--logo-clr-web);
 }
-
 
 .studio-footer-color {
   color: var(--logo-clr-light);
