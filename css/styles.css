@@ -355,7 +355,7 @@ img {
   justify-content: center;
   gap: 24px;
   padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .pf-btn {
   font-family: "Roboto", sans-serif;
@@ -382,22 +382,31 @@ img {
 .pf-btn:focus {
   background: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent;
 }
+
 /* portfolio */
 
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+ 
 }
 
 .pf-list {
-  margin-bottom: 48px;
+  width: calc((100% - 48px) / 3);
+}
+
+.pf-div {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .project-heading {
-  padding-top: 32px;
-  padding-left: 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -406,9 +415,6 @@ img {
 }
 
 .project-direction {
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
